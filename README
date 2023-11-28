@@ -1,0 +1,25 @@
+//1º Passo 
+// Instalar as dependencias
+
+//Inicializa um projeto Node.js (cria um arquivo package.json)
+//npm init -y
+
+//npm install express --save
+
+//npm install sequelize --save
+
+//npm install sequelize mysql2
+
+//npm install mysql2 --save
+
+//npm install body-parser --save
+
+//npm install ejs --save
+
+//2º Passo 
+//Iniciar o projeto 
+
+//node app.js
+
+//http://localhost:3000/
+

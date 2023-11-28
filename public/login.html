@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script type="text/javascript" src="script.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <img src="img/logo.png" class="logo" alt="Logo">
+            <a class="logo__name" href="#topo">Panelas Digital - Books para Receitas</a>
+        </head>
+        <body>
+        
+            <div id="login-form">
+                <h2>Login</h2>
+                <form onsubmit="return doLogin()">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" required>
+                    <br>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" required>
+                    <br>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        
+            <script>
+                function doLogin() {
+                    var username = document.getElementById('username').value;
+                    var password = document.getElementById('password').value;
+        
+                    // Exemplo muito simples. Em uma aplicação real, você deve validar no servidor.
+                    if (username === 'admin' && password === 'senha') {
+                        window.location.href = 'Receitas-main\projeto.final\Cadastro-de-Receitas-main\Cadastro-de-Receitas-main\login.html'; // Redireciona para o link desejado
+                        return false; // Impede o envio do formulário
+                    } else {
+                        alert('Usuário ou senha incorretos. Tente novamente.');
+                        return false; // Impede o envio do formulário
+                    }
+                }
+            </script>
+        
+        </body>
+        </html>

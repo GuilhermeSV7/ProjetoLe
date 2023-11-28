@@ -1,0 +1,93 @@
+.logo {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 4%;
+}
+
+.logo__name {
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+.nav__titulos {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+}
+
+.titulo__cadastro {
+    font-family: 'Source Serif Pro',serif;    
+    font-weight: 700;
+    padding: 2%;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+}
+
+.form__area {
+    width: 50%;
+}
+
+.area__texto {
+    height: 200px;
+}
+
+.form__categoria {
+    margin-bottom: 0.5rem;
+}
+
+.form__funcao {
+    margin-bottom: 0.5rem;
+}
+
+.form__botao{
+    padding-top: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+      width: 15%;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 50px;
+}
+
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#error-message {
+    color: red;
+}

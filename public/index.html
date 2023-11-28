@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Book de Receitas</title>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script type="text/javascript" src="script.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <img src="img/logo.png" class="logo" alt="Logo">
+            <a class="logo__name" href="#topo">Panelas Digital </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav__titulos">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="C:\Users\erver\Downloads\Receitas-main\Receitas-main\projeto.final\Cadastro-de-Receitas-main\Cadastro-de-Receitas-main\pesfuncionario.html">Pesquisar Funcionario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="C:\Users\erver\Downloads\Receitas-main\Receitas-main\projeto.final\Cadastro-de-Receitas-main\Cadastro-de-Receitas-main\pesreceita.html">Pesquisar Receita</a>
+                    </li>
+
+                    <a class="nav-link active" href="/Funcionarios">Novo Funcionário</a>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="C:\Users\erver\Downloads\Receitas-main\Receitas-main\projeto.final\Cadastro-de-Receitas-main\Cadastro-de-Receitas-main\index.html"> Novo Book</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid mb-5">
+        <h2 class="titulo__cadastro">Cadastrar Book</h2>
+
+        <form class="formulario" name="cadastrar" onsubmit="event.preventDefault()">
+            <div class="row form__area">
+                <div class="mb-4 col-12">
+                    <label for="nomeReceita" class="form-label">Nome da Receita</label>
+                    <input type="text" class="form-control" id="nomeReceita" placeholder="Digite um nome para a Receita"
+                        name="nomeReceita" required>
+                </div>
+                <div class="mb-4 col-12">
+                    <label for="nomeReceita" class="form-label">Nome do cozinheiro </label>
+                    <input type="text" class="form-control" id="nomeReceita" placeholder="Digite um nome do cozinheiro"
+                        name="nomeReceita" required>
+                </div>
+
+                <div class="mb-4 col-12">
+                    <label for="nomeReceita" class="form-label">Nome do Degustador </label>
+                    <input type="text" class="form-control" id="nomeReceita" placeholder="Digite um nome do degustador"
+                        name="nomeReceita" required>
+                </div>
+
+                <div class="mb-4 col-12">
+                    <label for="nomeReceita" class="form-label">Nome do Editor</label>
+                    <input type="text" class="form-control" id="nomeReceita" placeholder="Digite um nome do Editor"
+                        name="nomeReceita" required>
+                </div>
+                <div class="mb-4 col-12">
+                    <label for="nomeReceita" class="form-label">Data da receita</label>
+                    <input type="text" class="form-control" id="nomeReceita" placeholder="ex.: 10/10/2023"
+                        name="nomeReceita" required>
+                </div>
+
+                <div class="mb-4 col-12">
+                    <label for="ingreReceita" class="form-label">Ingredientes</label>
+                    <textarea type="text" class="form-control area__texto" id="ingreReceita"
+                        placeholder="Liste os Ingredientes da Receita" name="ingreReceita" required></textarea>
+                </div>
+                <div class="mb-4 col-12">
+                    <label for="ingreReceita" class="form-label">Medida de Ingredientes</label>
+                    <textarea type="text" class="form-control area__texto" id="ingreReceita"
+                        placeholder="Liste as medidas Ingredientes da Receita Ex.: 2 xicaras de leite " name="ingreReceita" required></textarea>
+                </div>
+                <div class="mb-4 col-12">
+                    <label for="prepReceita" class="form-label">Modo de Preparo</label>
+                    <textarea type="text" class="form-control area__texto" id="prepReceita"
+                        placeholder="Digite o passo a passo do preparo da Receita" name="prepReceita"
+                        required></textarea>
+                </div>
+
+                <div class="col-12">
+                    <p class="form__categoria">Categoria</p>
+                </div>
+
+                <div class="input-group">
+                    <input id="categoria" type="text" class="form-control" aria-label="Text input with dropdown button"
+                        placeholder="Escolha uma categoria" name="categoria" required>
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"></button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#tortBol" onclick="selectItem(`Tortas e Bolos`)">Tortas e
+                                Bolos</a></li>
+                        <li><a class="dropdown-item" href="#docSob" onclick="selectItem(`Doces e Sobremesas`)">Doces e
+                                Sobremesas</a></li>
+                        <li><a class="dropdown-item" href="#bebidas"
+                                onclick="selectItem(`Bebidas para Degustar`)">Bebidas para Degustar</a></li>
+                        <li><a class="dropdown-item" href="#aves" onclick="selectItem(`Aves de Fácil Preparo`)">Aves de
+                                Fácil Preparo</a></li>
+                        <li><a class="dropdown-item" href="#massa"
+                                onclick="selectItem(`Massas de Todos os Tipos`)">Massas de Todos os Tipos</a></li>
+                        <li><a class="dropdown-item" href="#lanche" onclick="selectItem(`Lanches Rápidos`)">Lanches
+                                Rápidos</a></li>
+                        <li><a class="dropdown-item" href="#pao" onclick="selectItem(`Pães e Salgados`)">Pães e
+                                Salgados</a></li>
+                        <li><a class="dropdown-item" href="#carne" onclick="selectItem(`Carnes`)">Carnes</a></li>
+                        <li><a class="dropdown-item" href="#peixe" onclick="selectItem(`Peixes e Frutos do Mar`)">Peixes
+                                e Frutos do Mar</a></li>
+                        <li><a class="dropdown-item" href="#acomp"
+                                onclick="selectItem(`Acompanhamento`)">Acompanhamento</a></li>
+                        <li><a class="dropdown-item" href="#saladas" onclick="selectItem(`Saladas`)">Saladas</a></li>
+                        <li><a class="dropdown-item" href="#molhos" onclick="selectItem(`Molhos`)">Molhos</a></li>
+                    </ul>
+                </div>
+
+ 
+
+
+                  <div action="processar_cadastro.php" method="post" enctype="multipart/form-data">
+        
+                    <label for="imagem">Imagem para capa do Book:</label>
+                    <input type="file" id="imagem" name="imagem" accept="image/*">
+        
+                    <button type="submit">Carregar</button>
+                  </div>
+
+
+
+
+                <div class="form__botao">
+                    <button type="submit" class="btn btn-primary mb-4" onclick="insere()">Gerar Book</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container" id="tabela">
+
+        <h2 class="titulo__cadastro">Receitas</h2>
+        <table class="table table-striped table-hover">
+            <tbody id="inserirTabela">
+                <thead>
+                    <tr>
+                        <th scope="col">Nome da Receita</th>
+                        <th scope="col">Ingredientes</th>
+                        <th scope="col">Modo de Preparo</th>
+                        <th scope="col">Categoria</th>
+                    </tr>
+                </thead>
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
